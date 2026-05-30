@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Help Desk Reasoner</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <div>
+                <h2>Help Desk</h2>
+                <span>Reasoner</span>
+            </div>
+
+        </div>
+
+        <button class="new-chat">
+            <i class="fa-regular fa-message"></i>
+            New Chat
+        </button>
+
+        <div class="menu">
+
+            <div class="menu-item">
+                <i class="fa-regular fa-clone"></i>
+                Topics
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-chart-line"></i>
+                My Progress
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-regular fa-circle-question"></i>
+                How to Use
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-regular fa-user"></i>
+                About
+            </div>
+
+        </div>
+
+        <div class="recent">
+
+            <h3>Recent Chats</h3>
+
+            <div class="recent-item">What is A* Search?</div>
+            <div class="recent-item">Explain CSP</div>
+            <div class="recent-item">Minimax Algorithm</div>
+            <div class="recent-item">DFS vs BFS</div>
+
+        </div>
+
+        <div class="guardrail">
+
+            <h4>
+                <i class="fa-solid fa-shield-halved"></i>
+                Academic Integrity Guard
+            </h4>
+
+            <p>We promote learning.</p>
+            <p>No direct assignment answers.</p>
+            <p>Let's solve together!</p>
+
+        </div>
+
+    </div>
+
+    <div class="main-chat">
+
+        <div class="topbar">
+
+            <div>
+                <h1>Automated Help Desk Reasoner</h1>
+                <p>Your AI Tutor for students</p>
+            </div>
+
+            <div class="profile">
+                <i class="fa-solid fa-circle-user"></i>
+                Student
+            </div>
+
+        </div>
+
+        <div id="chatbox">
+
+            <div class="bot-box">
+
+                <div class="message bot-message">
+
+                    👋 Hi! I'm your Help Desk Reasoner.
+                    <br><br>
+
+                    Ask me anything from the syllabus.
+                    <br><br>
+
+                    I'll explain step-by-step and help you understand!
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="typing">
+            AI is typing...
+        </div>
+
+        <div class="input-area">
+
+            <div class="input-box">
+
+                <input type="text" id="userInput"
+                    placeholder="Type your question here...">
+
+            </div>
+
+            <button onclick="sendMessage()">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send
+            </button>
+
+        </div>
+
+        <div class="bottom-warning">
+            ⚠ Don't paste assignment questions directly.
+        </div>
+
+        <div class="footer">
+            © 2025 Automated Help Desk Reasoner | Built for students ❤️
+        </div>
+
+    </div>
+
+    <div class="right-panel">
+
+        <div class="trace-box">
+
+            <h3>
+                <i class="fa-solid fa-brain"></i>
+                Reasoning Trace
+            </h3>
+
+            <ul id="trace">
+
+                <li>✔ Understanding your question</li>
+                <li>✔ Retrieving knowledge</li>
+                <li>✔ Generating explanation</li>
+                <li>🔵 Done</li>
+
+            </ul>
+
+        </div>
+
+        <div class="diagnostic-box">
+
+            <h3>
+                <i class="fa-solid fa-bug"></i>
+                Diagnostic Assistant
+            </h3>
+
+            <ol>
+                <li>Expected output</li>
+                <li>Actual output</li>
+                <li>What you tried</li>
+            </ol>
+
+        </div>
+
+        <div class="escalation-box">
+
+            <h3>
+                <i class="fa-solid fa-clock"></i>
+                Escalation Center
+            </h3>
+
+            <p>
+                If unresolved after 3 attempts,
+                your issue may be escalated.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

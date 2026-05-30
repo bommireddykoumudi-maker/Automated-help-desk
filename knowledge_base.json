@@ -1,0 +1,17 @@
+{
+    "bfs": "BFS stands for Breadth First Search. It explores nodes level by level using a queue.",
+
+    "dfs": "DFS stands for Depth First Search. It explores deeply before backtracking using a stack.",
+
+    "astar": "A* search uses path cost plus heuristic value to find optimal paths.",
+
+    "ucs": "Uniform Cost Search expands the node with minimum path cost.",
+
+    "csp": "Constraint Satisfaction Problems solve variables under constraints using backtracking.",
+
+    "bayesian": "Bayesian Networks represent probabilistic relationships between variables.",
+
+    "minimax": "Minimax is used in game playing AI to maximize winning chances.",
+
+    "alpha beta": "Alpha Beta pruning reduces unnecessary minimax calculations."
+}
